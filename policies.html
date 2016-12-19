@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Grace A. Dow Memorial Library</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .w3-sidenav a {
+        font-family: "Roboto", sans-serif;
+    }
+
+    body, h1, h2, h3, h4, h5, h6, .w3-wide {
+        font-family: "Montserrat", sans-serif;
+    }
+</style>
+<body>
+
+    <!-- Sidenav/menu -->
+    <nav class="w3-sidenav w3-black w3-collapse w3-top" style="z-index:3;width:275px" id="mySidenav">
+        <div class="w3-container w3-padding-16">
+            <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-closebtn w3-hover-text-red"></i>
+            <img src="http://www.cityofmidlandmi.gov/ImageRepository/Document?documentID=7232" /img>
+            <h4>Grace A. Dow Memorial Library</h4>
+        </div>
+        <div class="w3-medium w3-text-grey" style="font-weight:bold">
+            <div class="w3-accordion">
+                <a href="index.html">Home</a>
+                <a onclick="myAccFunc('account')" href="javascript:void(0)">My Library Account/Catalog<i class="fa fa-caret-down"></i></a>
+                <div id="account" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="http://vlc.ent.sirsi.net/client/en_US/mid">Log In Here</a>
+                    <a href="helpusingthecatalog.html">Help Using the Catalog</a>
+                    <a href="howtogetalibrarycard.html">How to get a Library Card</a>
+                    <a href="http://cityofmidlandmi.gov/DocumentCenter/View/12024">How to renew your books</a>
+                    <a href="http://mel.org/melcat">MelCat Michigan Catalog</a>
+                    <a href="policies.html" class="w3-light-grey">Policies</a>
+                    <a href="https://valcat.vlc.lib.mi.us/ipac20/ipac.jsp?profile=dial3#focus">Previous Catalog</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('aToZ')" href="javascript:void(0)">A to Z, Services & Information<i class="fa fa-caret-down"></i></a>
+                <div id="aToZ" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#">Apps for Library Services</a>
+                    <a href="#">Audiobooks</a>
+                    <a href="#">Baby Time</a>
+                    <a href="#">Baskets to Borrow</a>
+                    <a href="#">Birthday Club</a>
+                    <a href="#">Book Club in a Bag</a>
+                    <a href="#">Book Discussions</a>
+                    <a href="#">Book Express</a>
+                    <a href="#">Books Coming Soon</a>
+                    <a href="#">Check Out Periods</a>
+                    <a href="#">Classic Movies in the Afternoon</a>
+                    <a href="#">Collections for Adults, Teens & Youth</a>
+                    <a href="#">Computer Classes</a>
+                    <a href="#">Computer Services at the Library</a>
+                    <a href="#">Corporate Cards</a>
+                    <a href="#">DVD Rentals</a>
+                    <a href="#">Exam Proctoring Service</a>
+                    <a href="#">Fines & Fees</a>
+                    <a href="#">Genealogy</a>
+                    <a href="#">History</a>
+                    <a href="#">Holds</a>
+                    <a href="#">Inter-Library Loan</a>
+                    <a href="#">Library Hours</a>
+                    <a href="#">Laptop Rentals</a>
+                    <a href="howtogetalibrarycard.html">Library Cards</a>
+                    <a href="#">Library Newsletter</a>
+                    <a href="#">Library Social Media</a>
+                    <a href="#">Midland Newspapers</a>
+                    <a href="#">Mobile Printing</a>
+                    <a href="policies.html" class="w3-light-grey">Policies</a>
+                    <a href="#">Reference Services</a>
+                    <a href="#">Resources on the Web</a>
+                    <a href="#">Starting a Business</a>
+                    <a href="#">Summer Reading Programs</a>
+                    <a href="#">Touch-a-Truck Day</a>
+                    <a href="#">Tours for Youth</a>
+                    <a href="#">Visually Impaired Services</a>
+                    <a href="#">Volunteer</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('about')" href="javascript:void(0)">
+                    About the Library<i class="fa fa-caret-down"></i>
+                </a>
+                <div id="about" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="http://cityofmidlandmi.gov/DocumentCenter/View/8587">2014-2015 Library Budget Report</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Mission and Vision</a>
+                    <a href="policies.html">Policies</a>
+                    <a href="#">History</a>
+                    <a href="howtogetalibrarycard.html">How to Get a Library Card</a>
+                </div>
+            </div>
+            <a href="#">Apps for Library Services</a>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('battle')" href="javascript:void(0)">Battle of the Books<i class="fa fa-caret-down"></i></a>
+                <div id="battle" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('databases')" href="javascript:void(0)" id="aboutBtn">Databases<i class="fa fa-caret-down"></i></a>
+                <div id="databases" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('ebooks')" href="javascript:void(0)">eBooks<i class="fa fa-caret-down"></i></a>
+                <div id="ebooks" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('events')" href="javascript:void(0)">Events for Adults, Teens & Youth<i class="fa fa-caret-down"></i></a>
+                <div id="events" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('readers')" href="javascript:void(0)" id="aboutBtn">For Readers<i class="fa fa-caret-down"></i></a>
+                <div id="readers" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('friends')" href="javascript:void(0)" id="aboutBtn">Friends of the Library<i class="fa fa-caret-down"></i></a>
+                <div id="friends" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+
+            <a href="#">Genealogy/Local History</a>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('gifts')" href="javascript:void(0)" id="aboutBtn">Gifts, Memorials & Donations<i class="fa fa-caret-down"></i></a>
+                <div id="gifts" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <a href="#">Library Board</a>
+            <a href="#">Library Connection Newsletter</a>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('programs')" href="javascript:void(0)">Programs<i class="fa fa-caret-down"></i></a>
+                <div id="programs" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <a href="#">Rooms for Rent</a>
+            <a href="#">Visually Impaired Services</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding-24">
+        <span class="w3-left w3-wide">LOGO</span>
+        <a href="javascript:void(0)" class="w3-right w3-opennav" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+
+    <!-- Overlay effect when opening sidenav on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:275px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Top header -->
+        <header class="w3-container w3-xlarge">
+
+            <h1 class="w3-center w3-padding-24">Policies</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Grace-A-Dow-Library-Midland.jpg" class="w3-col l12" />
+
+
+        </header>
+        <!-- Product grid -->
+        <div class="w3-row w3-row-padding">
+            <div class="w3-col l8 m12">
+            <h3>Checkout Periods</h3>
+            <p>Loan periods vary from 4 days to 28 days. The library has a 4 day grace period on overdue materials (except videos, DVDs, Book Express and most material loaned from another library). If you return your materials within this period you will not be fined. A printed receipt will list the due dates of your library materials.</p>
+            <ul>
+                <li>4 Weeks - Most items</li>
+                <li>2 Weeks - New books, CDs, magazines, holiday materials, circulating encyclopedias, maps, pamphlets and other high demand items</li>
+                <li>1 Week - Nonfiction videos, and Book Express items, Feature and children's videocassettes and DVDs older than 6 months</li>
+                <li>4 Days - New DVDs (up to 6 months after release)</li>
+            </ul>
+            <h3>Fines & Fees</h3>
+            <h4>Overdue Fines</h4>
+            <ul>
+                <li><b>Adult material</b> - $0.15 per day up to a maximum of $15 per item, per checkout period, or the cost of the item, whichever is less.</li>
+                <li><b>Youth material</b> - $0.10 per day up to a maximum of $10 per item, per checkout period, or the cost of the item, whichever is less.</li>
+                <li><b>Videos or DVDs</b> - $1 per day, per video up to the replacement cost of the video.</li>
+            </ul>
+            <h4>Lost & Damaged Material</h4>
+            <ul>
+                <li><b>Lost Items</b> - Cost of the item per the library database plus an $8 processing fee</li>
+                <li><b>Damaged Material</b> - If an item is returned beyond repair, the total cost of the item per the library database must be paid plus an $8 processing fee. If audiocassettes or books on CD and MP3 are returned with missing items that can be replaced, the cost of the replacement per the vendor plus an $8 processing fee will be charged.</li>
+                <li>Failure to pay assessed fines and fees may result in suspension of library privileges or further legal action.</li>
+            </ul>
+            <h4>Inter-Library Loans & Holds</h4>
+            <ul>
+                <li><b>Holds and interlibrary loan requests</b> - $0.25 per item</li>
+                <li><b>Michigan Electronic Library catalog requests</b> - No charge</li>
+                <li>Other interlibrary loan fees as applicable</li>
+            </ul>
+            <h4>Library Cards</h4>
+            <ul>
+                <li><b>Resident cards</b> - Free <a href="#">(Service Areas)</a></li>
+                <li><b>Non-resident cards</b> - $75 per year</li>
+                <li><b>Replacement cards</b> - $2 damaged cards will be replaced free of charge upon presentation of damaged card by card holder</li>
+                <li><b>Borrowing materials without having library card</b> - Service charge of $1 (All circulation policies apply.)</li>
+            </ul>
+            <h4>Copy & Printing Fees</h4>
+            <ul>
+                <li><b>Black and white</b> - First page no charge, additional printing $0.10 per page</li>
+                <li><b>Color</b> - (only available for printing) $1 per page</li>
+                <li><b>Copy machines, Microform reader printer</b> - $0.10 per page</li>
+            </ul>
+            <h4>Ordinances</h4>
+            <p>The <a href="http://mi-midland.civicplus.com/DocumentCenter/View/2129">Fines and Fees Ordinance</a> took effect on February 4, 2008.</p>
+            <h3>Holds</h3>
+            <p>You may place a hold yourself by using the online catalog in the library or on the Internet with the web catalog. The Reference Desk staff will also place a hold for you within the library or by telephone. You must have your Library card with you to place holds. Cost for placing a hold is 25¢, collected when you pick up your item. You will be notified by phone or email when the material is being held.</p>
+            <h3>Library Cards</h3>
+            <p>A library card is available free of charge to all individuals who show proof of residency within our service area. The cardholder is responsible for all library materials checked out, overdue fines, and various fees. The cardholder should report lost or stolen library cards to the Checkout Desk. Change of name, address, phone number, or e-mail address should be reported to the Checkout Desk.</p>
+            <p>Minors (under 16 years old) must have a parent or legal guardian present and sign the application to obtain a card.</p>
+            <h3>Lost & Found Items</h3>
+            <p>After two weeks all unclaimed items found on library premises become library property. Unclaimed currency will be added to the library’s operating fund. Other unclaimed items will be disposed of in a manner to be determined by the Library Director.</p>
+            <h3>Mobile Phone Use</h3>
+            <p>Cell phones have become pervasive in all areas of people’s lives. Recognizing the dependency on cell phones, the library does not ban cell phone use. In order to provide an environment that meets the needs of our users, the following rules have been instituted:</p>
+            <ul>
+                <li>Cell phone use is allowed in the library.</li>
+                <li>Cell phones should be set on vibrate while in the library.</li>
+                <li>Conversations on cell phones should be conducted in areas away from those using the computers or studying. Cell phone use is not permitted in the Quiet Room. Recommended locations include: library lobby, fireplace seating area on first floor, hallway in the lower level, and train table area in Youth Services.</li>
+                <li>Talking on a cell phone should be done as quietly as possible.</li>
+                <li>To provide faster and more efficient service, refraining from cell phone use while checking out materials and requesting information will benefit everyone.</li>
+                <li>Library staff will interrupt cell phone users who are disturbing others and direct them to more appropriate areas.</li>
+                <li>Cell phone users should be respectful of others using the library.</li>
+            </ul>
+            <h3>Renewals</h3>
+            <p>Two successive renewals may be made on most materials if another patron has not placed a hold on them. You must have your Library card with you to renew. The exceptions are videos, DVDs, CD ROMs, Book Express, Battle of the Books, holiday items and most material loaned from another library which are not renewable. (CDs and audiotapes may be renewed once). Renew your material by:</p>
+            <ul>
+                <li>Stopping at the Checkout Desk</li>
+                <li>Calling 989-837-3457</li>
+                <li>Using the public terminals at the library</li>
+                <li><a href="http://vlc.ent.sirsi.net/client/embedded.search/mid">Accessing our web catalog</a></li>
+            </ul>
+            <h3>Rules of Conduct</h3>
+            <p>The Grace A. Dow Memorial Library Staff strives to maintain pleasant facilities for all its users. The following Rules of Conduct have been developed to ensure an orderly and comfortable environment for all users of the Grace A. Dow Memorial Library.</p>
+            <ol>
+                <li>No person shall remove any materials from the library except for those library materials offered for loan, which are checked out according to library loan procedures.</li>
+                <li>No person shall deface, damage, or destroy library property or materials including, but not limited to, inserting notes or other materials into library materials.</li>
+                <li>No person shall use tobacco, tobacco products, drugs (except for legally administered prescription drugs), or alcohol while on library property.</li>
+                <li>No person shall consume food or beverages in the library except in connection with events sponsored through the library, upon prior approval of the Library Director, and/or in designated areas.</li>
+                <li>No person shall enter the library without wearing proper footwear and a shirt.</li>
+                <li>A parent or responsible childcare provider must accompany children under twelve (12) years of age and shall not leave them unattended or unsupervised.</li>
+                <li>No person shall engage in noisy or disruptive behavior.</li>
+                <li>No person shall use any personal electronic equipment including, but not limited to, cell phones, mp3 players, portable compact disc players, portable tape recorders/players, portable radios, portable DVD players, or personal computers in a way that would disturb other users of the library.</li>
+                <li>No person shall skate, skateboard or use similar equipment on the library grounds, in the parking lot, or in the building.</li>
+                <li>No person shall sleep within the library for extended periods of time (more than 15 minutes)</li>
+                <li>No person other than employees or those directed by staff shall enter a non-public area, enter the library prior to opening, or remain in the library after closing hours.</li>
+                <li>No person shall bring animals into the library except guide animals or animals brought into the library in connection with library programs.</li>
+                <li>No person shall violate any city ordinance, state or federal law.</li>
+            </ol>
+            <p>Any person not abiding by these or other rules and regulations of the library may be required to leave the library premises and may forfeit their library privileges. Library employees will contact the police if deemed appropriate. Patron identification (name, address, and phone number) may be requested. Upon notice, the Library Director may deny any person who violates these rules and regulations access to the library for a period commensurate with the infraction. These rules take effect on September 29, 2003, shall be on file at library public service desks, will be posted on each floor, and filed with the City Clerk.</p>
+           
+</div>
+            </div>
+
+        <!-- Footer -->
+            <div class="w3-row w3-row-padding">
+                <footer class="w3-padding-32 w3-light-grey w3-small w3-center" id="footer">
+
+                    <div class="w3-row-padding">
+                        <h4>City of Midland</h4>
+                        <div class="w3-col s4">
+
+                            <h6>Address:</h6>
+                            <p>333 W. Ellsworth St.</p>
+                            <p>Midland, MI 48640</p>
+                            <p>Phone: 989-837-3300</p>
+                        </div>
+                        <div class="w3-col s4">
+                            <h6>City Hall Hours:</h6>
+                            <p>Monday - Friday</p>
+                            <p>8:00am - 5:00pm</p>
+                            <p>Closed major holidays</p>
+                        </div>
+
+
+                        <div class="w3-col s4">
+                            <h6>Using this Site:</h6>
+                            <p><a href="#">Accessibility</a></p>
+                            <p><a href="#">Employment Opportunities</a></p>
+                            <p><a href="#">Contact Us</a></p>
+                            <p><a href="#">Home</a></p>
+                            <p><a href="#">Employee Portal</a></p>
+                            <p><a href="#">Copyright Notices</a></p>
+                            <p><a href="#">Privacy Notice</a></p>
+                            <p><a href="#">Title VI</a></p>
+
+                        </div>
+
+
+                    </div>
+                </footer>
+            </div>
+    <div class="w3-black w3-center w3-padding-24">Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+    <!-- End page content -->
+    </div>
+
+
+
+    <script>
+// Accordion
+function myAccFunc(id) {
+
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+    </script>
+
+</body>
+</html>
