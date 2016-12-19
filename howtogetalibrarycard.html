@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Grace A. Dow Memorial Library</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .w3-sidenav a {
+        font-family: "Roboto", sans-serif;
+    }
+
+    body, h1, h2, h3, h4, h5, h6, .w3-wide {
+        font-family: "Montserrat", sans-serif;
+    }
+</style>
+<body class="w3-container">
+
+    <!-- Sidenav/menu -->
+    <nav class="w3-sidenav w3-black w3-collapse w3-top" style="z-index:3;width:275px" id="mySidenav">
+        <div class="w3-container w3-padding-16">
+            <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-closebtn w3-hover-text-red"></i>
+            <img src="http://www.cityofmidlandmi.gov/ImageRepository/Document?documentID=7232" /img>
+            <h4>Grace A. Dow Memorial Library</h4>
+        </div>
+        <div class="w3-medium w3-text-grey" style="font-weight:bold">
+            <div class="w3-accordion">
+                <a href="index.html">Home</a>
+                <a onclick="myAccFunc('account')" href="javascript:void(0)">My Library Account/Catalog<i class="fa fa-caret-down"></i></a>
+                <div id="account" class="w3-accordion-content w3-padding-large w3-medium w3-show">
+                    <a href="#">Log In Here</a>
+                    <a href="helpusingthecatalog.html">Help Using the Catalog</a>
+                    <a href="howtogetalibrarycard.html" class="w3-light-grey">How to get a Library Card</a>
+                    <a href="#">How to renew your books</a>
+                    <a href="#">MelCat Michigan Catalog</a>
+                    <a href="#">Policies</a>
+                    <a href="#">Previous Catalog</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('aToZ')" href="javascript:void(0)">A to Z, Services & Information<i class="fa fa-caret-down"></i></a>
+                <div id="aToZ" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('about')" href="javascript:void(0)">
+                    About the Library<i class="fa fa-caret-down"></i>
+                </a>
+                <div id="about" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <a href="#">Apps for Library Services</a>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('battle')" href="javascript:void(0)">Battle of the Books<i class="fa fa-caret-down"></i></a>
+                <div id="battle" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('databases')" href="javascript:void(0)" id="aboutBtn">Databases<i class="fa fa-caret-down"></i></a>
+                <div id="databases" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('ebooks')" href="javascript:void(0)">eBooks<i class="fa fa-caret-down"></i></a>
+                <div id="ebooks" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('events')" href="javascript:void(0)">Events for Adults, Teens & Youth<i class="fa fa-caret-down"></i></a>
+                <div id="events" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('readers')" href="javascript:void(0)" id="aboutBtn">For Readers<i class="fa fa-caret-down"></i></a>
+                <div id="readers" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('friends')" href="javascript:void(0)" id="aboutBtn">Friends of the Library<i class="fa fa-caret-down"></i></a>
+                <div id="friends" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+
+            <a href="#">Genealogy/Local History</a>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('gifts')" href="javascript:void(0)" id="aboutBtn">Gifts, Memorials & Donations<i class="fa fa-caret-down"></i></a>
+                <div id="gifts" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <a href="#">Library Board</a>
+            <a href="#">Library Connection Newsletter</a>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('programs')" href="javascript:void(0)">Programs<i class="fa fa-caret-down"></i></a>
+                <div id="programs" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <a href="#">Rooms for Rent</a>
+            <a href="#">Visually Impaired Services</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding-24">
+        <span class="w3-left w3-wide">LOGO</span>
+        <a href="javascript:void(0)" class="w3-right w3-opennav" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+
+    <!-- Overlay effect when opening sidenav on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:275px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Top header -->
+        <header class="w3-container w3-xlarge">
+
+            <h1 class="w3-center w3-padding-24">How to get a Library Card</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Grace-A-Dow-Library-Midland.jpg" class="w3-col l12" />
+
+
+        </header>
+        <!-- Product grid -->
+        <div class="w3-row w3-row-padding">
+            <p>A library card is available free of charge to all individuals who show proof of residency within our service area. </p>
+            <h2><a href="http://cityofmidlandmi.gov/DocumentCenter/View/7217">Library Card Application</a></h2>
+            <p>Print and bring to library with your proof of residency.</p>
+            <p>Acceptable proof of residency:</p>
+            <ul>
+                <li>city of township tax bill</li>
+                <li>drivers license with local address</li>
+                <li>lease agreement</li>
+                <li>utility bill with your local address - power, water, cable</li>
+            </ul>
+            <p>The cardholder is responsible for all library materials checked out, overdue fines, and various fees. This is a bearer’s card so the cardholder should report lost or stolen library cards to the Checkout Desk, 837-3457. Change of name, address, phone number, or e-mail address should be reported to the Checkout Desk. Minors (under 16 years old) must have a parent or legal guardian present and sign the application to obtain a card. </p>
+        </div>
+        <div class="w3-row w3-row-padding">
+            <div class="w3-center">
+                <h3>Grace A. Dow Memorial Library Service Area</h3>
+                <a href="#overdrive">For eBook borrowing service area click here</a>
+            </div>
+            <div class="w3-col l4">
+                <p>In Bay County:</p>
+                <ul>
+                    <li>All Areas</li>
+                </ul>
+                <p>In Clare County:</p>
+                <ul>
+                    <li>City of Clare</li>
+                    <li>Grant Township</li>
+                </ul>
+                <p>In Clinton County:</p>
+                <ul>
+                    <li>Victor Township</li>
+                </ul>
+                <p>In Genessee County:</p>
+                <ul>
+                    <li>All Areas</li>
+                </ul>
+                <p>In Ingham County:</p>
+                <ul>
+                    <li>All except the City of East Lansing</li>
+                </ul>
+                <p>In Isabella County:</p>
+                <ul>
+                    <li>City of Mt. Pleasant</li>
+                    <li>Mt. Pleasant School District</li>
+                    <li>Coe Township</li>
+                    <li>Fremont Township</li>
+                    <li>Rolland Township</li>
+                </ul>
+                <p>In Lapeer County:</p>
+                <ul>
+                    <li>All Areas</li>
+                </ul>
+            </div>
+            <div class="w3-col l4">
+                <p>In Midland County:</p>
+                <ul>
+                    <li>City of Coleman</li>
+                    <li>City of Midland</li>
+                    <li>Edenville Township</li>
+                    <li>Geneva Township</li>
+                    <li>Greendale Township</li>
+                    <li>Homer Township</li>
+                    <li>Hope Township</li>
+                    <li>Ingersoll Township</li>
+                    <li>Jerome Township</li>
+                    <li>Larkin Township</li>
+                    <li>Lee Township</li>
+                    <li>Lincoln Township</li>
+                    <li>Midland Township</li>
+                    <li>Mills Township</li>
+                    <li>Mt. Haley Township</li>
+                    <li>Warren Township</li>
+                </ul>
+                <p>In Oakland County:</p>
+                <ul>
+                    <li>Groveland Township</li>
+                    <li>Holly Township</li>
+                    <li>Rose Township</li>
+                </ul>
+            </div>
+            <div class="w3-col l4">
+                <p>In Saginaw County:</p>
+                <ul>
+                    <li>City of Saginaw</li>
+                    <li>City of Zilwaukee</li>
+                    <li>Buena Vista Township</li>
+                    <li>Carrollton Township</li>
+                    <li>James Township</li>
+                    <li>Kochville Township</li>
+                    <li>Saginaw Township</li>
+                    <li>Tittabawassee Township</li>
+                    <li>Zilwaukee Township</li>
+                </ul>
+                <p>In Shiawassee County:</p>
+                <ul>
+                    <li>All areas except Fairfield Township and Middlebury Township</li>
+                </ul>
+            </div>
+        </div>
+        <div class="w3-row w3-row-padding">
+            <h4>If you live outside of these areas please call the Library to see if you are eligible for a card. (989) 837-3457.</h4>
+
+        </div>
+        <div id="overdrive" class="w3-row w3-row-padding">
+            <h4><a href="http://midland-mi.lib.overdrive.com/">Grace A. Dow Memorial Library Overdrive eBook</a> Service areas:</h4>
+            <p>Residents of the City of Midland and residents of the following Midland County townships:</p>
+            <p>Edenville, Greendale, Homer, Hope, Ingersoll, Jerome, Larkin, Lee, Lincoln, Midland, Mills, Mt. Haley</p>
+            <p>This service is available to residents of the Library’s legal service area.  Bay County, Saginaw County, and other areas may have their own eBook collections.</p>
+            </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-padding-32 w3-light-grey w3-small w3-center" id="footer">
+
+        <div class="w3-row-padding">
+            <h4>City of Midland</h4>
+            <div class="w3-col s4">
+
+                <h6>Address:</h6>
+                <p>333 W. Ellsworth St.</p>
+                <p>Midland, MI 48640</p>
+                <p>Phone: 989-837-3300</p>
+            </div>
+            <div class="w3-col s4">
+                <h6>City Hall Hours:</h6>
+                <p>Monday - Friday</p>
+                <p>8:00am - 5:00pm</p>
+                <p>Closed major holidays</p>
+            </div>
+
+
+            <div class="w3-col s4">
+                <h6>Using this Site:</h6>
+                <p><a href="#">Accessibility</a></p>
+                <p><a href="#">Employment Opportunities</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Employee Portal</a></p>
+                <p><a href="#">Copyright Notices</a></p>
+                <p><a href="#">Privacy Notice</a></p>
+                <p><a href="#">Title VI</a></p>
+
+            </div>
+
+
+        </div>
+    </footer>
+        </div>
+    <div class="w3-black w3-center w3-padding-24">Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+    <!-- End page content -->
+    </div>
+
+
+
+    <script>
+// Accordion
+function myAccFunc(id) {
+
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+    </script>
+
+</body>
+</html>

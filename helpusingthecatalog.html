@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Grace A. Dow Memorial Library</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .w3-sidenav a {
+        font-family: "Roboto", sans-serif;
+    }
+
+    body, h1, h2, h3, h4, h5, h6, .w3-wide {
+        font-family: "Montserrat", sans-serif;
+    }
+</style>
+<body class="w3-container">
+
+    <!-- Sidenav/menu -->
+    <nav class="w3-sidenav w3-black w3-collapse w3-top" style="z-index:3;width:275px" id="mySidenav">
+        <div class="w3-container w3-padding-16">
+            <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-closebtn w3-hover-text-red"></i>
+            <img src="http://www.cityofmidlandmi.gov/ImageRepository/Document?documentID=7232" /img>
+            <h4>Grace A. Dow Memorial Library</h4>
+        </div>
+        <div class="w3-medium w3-text-grey" style="font-weight:bold">
+            <div class="w3-accordion">
+                <a href="index.html">Home</a>
+                <a onclick="myAccFunc('account')" href="javascript:void(0)">My Library Account/Catalog<i class="fa fa-caret-down"></i></a>
+                <div id="account" class="w3-accordion-content w3-padding-large w3-medium w3-show">
+                    <a href="#">Log In Here</a>
+                    <a href="helpusingthecatalog.html" class="w3-light-grey">Help Using the Catalog</a>
+                    <a href="howtogetalibrarycard.html">How to get a Library Card</a>
+                    <a href="#">How to renew your books</a>
+                    <a href="#">MelCat Michigan Catalog</a>
+                    <a href="#">Policies</a>
+                    <a href="#">Previous Catalog</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('aToZ')" href="javascript:void(0)">A to Z, Services & Information<i class="fa fa-caret-down"></i></a>
+                <div id="aToZ" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('about')" href="javascript:void(0)">About the Library<i class="fa fa-caret-down"></i>
+                </a>
+                <div id="about" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <a href="#">Apps for Library Services</a>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('battle')" href="javascript:void(0)">Battle of the Books<i class="fa fa-caret-down"></i></a>
+                <div id="battle" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('databases')" href="javascript:void(0)" id="aboutBtn">Databases<i class="fa fa-caret-down"></i></a>
+                <div id="databases" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('ebooks')" href="javascript:void(0)">eBooks<i class="fa fa-caret-down"></i></a>
+                <div id="ebooks" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('events')" href="javascript:void(0)">Events for Adults, Teens & Youth<i class="fa fa-caret-down"></i></a>
+                <div id="events" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('readers')" href="javascript:void(0)" id="aboutBtn">For Readers<i class="fa fa-caret-down"></i></a>
+                <div id="readers" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('friends')" href="javascript:void(0)" id="aboutBtn">Friends of the Library<i class="fa fa-caret-down"></i></a>
+                <div id="friends" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+
+            <a href="#">Genealogy/Local History</a>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('gifts')" href="javascript:void(0)" id="aboutBtn">Gifts, Memorials & Donations<i class="fa fa-caret-down"></i></a>
+                <div id="gifts" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <a href="#">Library Board</a>
+            <a href="#">Library Connection Newsletter</a>
+            <div class="w3-accordion">
+                <a onclick="myAccFunc('programs')" href="javascript:void(0)">Programs<i class="fa fa-caret-down"></i></a>
+                <div id="programs" class="w3-accordion-content w3-padding-large w3-medium">
+                    <a href="#" class="w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                    <a href="#">Relaxed</a>
+                    <a href="#">Bootcut</a>
+                    <a href="#">Straight</a>
+                </div>
+            </div>
+            <a href="#">Rooms for Rent</a>
+            <a href="#">Visually Impaired Services</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding-24">
+        <span class="w3-left w3-wide">LOGO</span>
+        <a href="javascript:void(0)" class="w3-right w3-opennav" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+
+    <!-- Overlay effect when opening sidenav on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:275px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Top header -->
+        <header class="w3-container w3-xlarge">
+
+            <h1 class="w3-center w3-padding-24">Help Using the Catalog</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Grace-A-Dow-Library-Midland.jpg" class="w3-col l12" />
+
+
+        </header>
+        <!-- Product grid -->
+        <div class="w3-row w3-row-padding">
+            <div class="w3-col l6 w3-center">
+                <h2><a href="http://vlc.ent.sirsi.net/client/en_US/mid">Searching the Catalog</a></h2>
+                <p><a href="http://www.cityofmidlandmi.gov/DocumentCenter/View/11207">How to Search the Catalog</a> (1 page PDF)</p>
+                <p><a href="http://www.cityofmidlandmi.gov/DocumentCenter/View/12504">Organize My Lists</a> (1 page PDF)</p>
+                <p><a href="http://www.cityofmidlandmi.gov/DocumentCenter/View/12122">Searching for Audiobooks</a> (1 page PDF)</p>
+                <p><a href="http://www.cityofmidlandmi.gov/DocumentCenter/View/12121">Searching for DVDs</a> (1 page PDF)</p>
+            </div>
+            <div class="w3-col l6 w3-center">
+                <h2><a href="http://vlc.ent.sirsi.net/client/en_US/mid">Your Account</a></h2>
+                <p>Access <b>My Account</b> at the top right of the catalog page.</b></p>
+                <img src="cat.jpg" />
+                <p><a href="http://www.cityofmidlandmi.gov/DocumentCenter/View/11238">Manage your account</a> - Items checked out and holds (1 page PDF)</p>
+                <p><a href="http://cityofmidlandmi.gov/DocumentCenter/View/12024">Renew your items</a> (1 page PDF)</p>
+            </div>
+
+        </div>
+      
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-padding-32 w3-light-grey w3-small w3-center" style="margin-left:275px" id="footer">
+
+        <div class="w3-row-padding">
+            <h4>City of Midland</h4>
+            <div class="w3-col s4">
+
+                <h6>Address:</h6>
+                <p>333 W. Ellsworth St.</p>
+                <p>Midland, MI 48640</p>
+                <p>Phone: 989-837-3300</p>
+            </div>
+            <div class="w3-col s4">
+                <h6>City Hall Hours:</h6>
+                <p>Monday - Friday</p>
+                <p>8:00am - 5:00pm</p>
+                <p>Closed major holidays</p>
+            </div>
+
+
+            <div class="w3-col s4">
+                <h6>Using this Site:</h6>
+                <p><a href="#">Accessibility</a></p>
+                <p><a href="#">Employment Opportunities</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Employee Portal</a></p>
+                <p><a href="#">Copyright Notices</a></p>
+                <p><a href="#">Privacy Notice</a></p>
+                <p><a href="#">Title VI</a></p>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+    <!-- End page content -->
+    </div>
+
+
+
+    <script>
+// Accordion
+function myAccFunc(id) {
+
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+    </script>
+
+</body>
+</html>
